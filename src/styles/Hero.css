@@ -1,0 +1,134 @@
+.hero{
+  position:relative;
+  min-height:85vh;
+
+  background:
+  linear-gradient(
+    rgba(11,31,51,0.75),
+    rgba(11,31,51,0.75)
+  ),
+  url("../assets/ct27-advanced.png");
+
+  background-repeat:no-repeat;
+  background-position:right center;
+  background-size:45%;
+  background-color:#0B1F33;
+
+  display:flex;
+  align-items:center;
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  max-width:700px;
+  color:#fff;
+}
+
+.hero-tag{
+  display:inline-block;
+  background:rgba(255,255,255,0.12);
+  backdrop-filter:blur(10px);
+  color:#fff;
+  padding:10px 18px;
+  border-radius:30px;
+  font-size:14px;
+  font-weight:600;
+  margin-bottom:25px;
+}
+
+.hero-content h1{
+  font-size:3.4rem;
+  font-weight:800;
+  line-height:1.15;
+  margin-bottom:25px;
+}
+
+.hero-content p{
+  font-size:1.05rem;
+  line-height:1.9;
+  color:#d1d5db;
+  margin-bottom:35px;
+  max-width:620px;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.primary-btn{
+  background:#3dabeb;
+  color:white;
+  padding:15px 30px;
+  border-radius:8px;
+  font-weight:600;
+  transition:.3s;
+}
+
+.primary-btn:hover{
+  transform:translateY(-3px);
+}
+
+.secondary-btn{
+  background:transparent;
+  color:white;
+  padding:15px 30px;
+  border-radius:8px;
+  border:2px solid rgba(255,255,255,0.3);
+  font-weight:600;
+  transition:.3s;
+}
+
+.secondary-btn:hover{
+ background:white;
+  color:#0B1F33;
+}
+
+@media(max-width:992px){
+
+  .hero{
+    background-position:center bottom;
+    background-size:70%;
+    text-align:center;
+    min-height:80vh;
+  }
+
+  .hero-content{
+    max-width:100%;
+  }
+
+  .hero-buttons{
+    justify-content:center;
+  }
+
+  .hero-content h1{
+    font-size:2.6rem;
+  }
+}
+
+@media(max-width:768px){
+
+  .hero{
+    background-size:85%;
+    min-height:75vh;
+  }
+
+  .hero-content h1{
+    font-size:2rem;
+  }
+
+  .hero-content p{
+    font-size:0.95rem;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+  }
+
+  .primary-btn,
+  .secondary-btn{
+    width:100%;
+  }
+}

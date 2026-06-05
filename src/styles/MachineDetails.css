@@ -1,0 +1,185 @@
+.machine-details{
+  padding:80px 0;
+}
+
+.machine-top{
+  display:flex;
+  gap:50px;
+  align-items:center;
+  margin-bottom:80px;
+}
+
+.machine-image{
+  flex:1;
+}
+
+.machine-image img{
+  width:100%;
+  border-radius:20px;
+}
+
+.machine-info{
+  flex:1;
+}
+
+.machine-info h1{
+  margin-bottom:15px;
+}
+
+.variant{
+  display:inline-block;
+  background:#f1f1f1;
+  padding:10px 15px;
+  border-radius:8px;
+  margin-bottom:20px;
+}
+
+.machine-info p{
+  line-height:1.8;
+  color:#555;
+  margin-bottom:25px;
+}
+
+.enquiry-btn{
+  display:inline-block;
+  background:#0F4C81;
+  color:white;
+  padding:14px 28px;
+  border-radius:8px;
+}
+
+.features-section,
+.specifications-section,
+.support-section{
+  margin-top:70px;
+}
+
+.features-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+  margin-top:30px;
+}
+
+.feature-card{
+  background:#f8f8f8;
+  padding:20px;
+  border-radius:12px;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:30px;
+}
+
+table td{
+  border:1px solid #ddd;
+  padding:15px;
+}
+
+table td:first-child{
+  font-weight:600;
+  background:#f7f7f7;
+}
+
+.support-section ul{
+  margin-top:20px;
+}
+
+.support-section li{
+  margin-bottom:12px;
+}
+
+@media(max-width:992px){
+
+  .machine-top{
+    flex-direction:column;
+  }
+
+  .features-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:576px){
+
+  .features-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+.machine-stats{
+  display:flex;
+  gap:20px;
+  margin:25px 0;
+  flex-wrap:wrap;
+}
+
+.stat-box{
+  background:#f8fafc;
+  padding:20px;
+  border-radius:12px;
+  min-width:220px;
+  border-left:4px solid #0F4C81;
+}
+
+.stat-box h3{
+  color:#0F4C81;
+  margin-bottom:8px;
+}
+
+.stat-box span{
+  color:#666;
+  font-size:14px;
+}
+
+.feature-card{
+  background:#fff;
+  padding:20px;
+  border-radius:14px;
+  box-shadow:0 5px 20px rgba(0,0,0,.08);
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+}
+
+.feature-card span{
+  color:green;
+  font-weight:700;
+  font-size:20px;
+}
+
+.specifications-section table{
+  width:100%;
+  border-collapse:collapse;
+  background:white;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.specifications-section td{
+  padding:16px;
+  border-bottom:1px solid #eee;
+}
+
+.specifications-section tr:nth-child(even){
+  background:#f8fafc;
+}
+
+.support-section{
+  background:#111827;
+  color:white;
+  padding:50px;
+  border-radius:20px;
+  margin-top:60px;
+}
+
+.support-section ul{
+  margin-top:20px;
+}
+
+.support-section li{
+  margin-bottom:12px;
+}

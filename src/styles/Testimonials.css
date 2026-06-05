@@ -1,0 +1,33 @@
+.testimonials{
+  padding:100px 0;
+  background:#f5f7fa;
+}
+
+.testimonial-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.testimonial-card{
+  background:#fff;
+  padding:30px;
+  border-radius:16px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.testimonial-card p{
+  color:#555;
+  line-height:1.8;
+  margin-bottom:20px;
+}
+
+.testimonial-card h4{
+  color:#0F4C81;
+}
+
+@media(max-width:768px){
+  .testimonial-grid{
+    grid-template-columns:1fr;
+  }
+}

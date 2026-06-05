@@ -1,0 +1,290 @@
+.contact-section {
+  padding: 100px 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.contact-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.contact-card h3 {
+  margin-bottom: 20px;
+  color: #0F4C81;
+}
+
+.contact-card a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
+.contact-card a:hover {
+  color: #FF8C00;
+}
+
+.contact-card p {
+  color: #555;
+  line-height: 1.8;
+}
+
+.contact-actions {
+  background: #f5f7fa;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.contact-actions h2 {
+  margin-bottom: 30px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.call-btn,
+.whatsapp-btn {
+  padding: 14px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.call-btn {
+  background: #0F4C81;
+  color: white;
+}
+
+.call-btn:hover {
+  transform: translateY(-3px);
+}
+
+.whatsapp-btn {
+  background: #25D366;
+  color: white;
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-3px);
+}
+
+.map-section {
+  padding: 100px 0;
+}
+
+.map-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.map-section iframe {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.business-hours {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.business-hours h2 {
+  margin-bottom: 20px;
+}
+
+.business-hours p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.location-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: #FF8C00;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.location-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .contact-banner h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .call-btn,
+  .whatsapp-btn {
+    width: 250px;
+  }
+}
+
+/* CONTACT HEADER */
+
+.contact-section{
+  padding:100px 0;
+  background:#f8fafc;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:30px;
+}
+
+.contact-card{
+  background:white;
+  border-radius:20px;
+  padding:35px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.contact-card:hover{
+  transform:translateY(-8px);
+}
+
+.contact-icon{
+  width:70px;
+  height:70px;
+  border-radius:18px;
+  background:#eef5ff;
+  color:#0F4C81;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:28px;
+  margin-bottom:20px;
+}
+
+.contact-card h3{
+  color:#081930;
+  margin-bottom:15px;
+}
+
+.contact-card a{
+  display:block;
+  color:#444;
+  margin-bottom:10px;
+}
+
+.contact-card span{
+  color:#6b7280;
+  font-size:14px;
+}
+
+.contact-card p{
+  color:#6b7280;
+  line-height:1.8;
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+
+  background:#25D366;
+  color:white;
+
+  padding:16px 35px;
+  border-radius:12px;
+
+  font-size:16px;
+  font-weight:600;
+}
+
+/* HOURS */
+
+.business-hours{
+  padding:100px 0;
+  background:#f8fafc;
+}
+
+.hours-card{
+  max-width:700px;
+  margin:auto;
+  background:white;
+  padding:50px;
+  border-radius:24px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.hours-icon{
+  font-size:45px;
+  color:#F7931E;
+  margin-bottom:20px;
+}
+
+.hours-card h2{
+  color:#081930;
+  margin-bottom:20px;
+}
+
+.hours-card p{
+  color:#6b7280;
+  margin-bottom:10px;
+}
+
+/* LOCATION BUTTON */
+
+.location-btn{
+  margin-top:18px;
+  display:inline-block;
+
+  background:#F7931E;
+  color:white;
+
+  padding:12px 22px;
+  border-radius:10px;
+  font-weight:600;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .contact-card{
+    padding:25px;
+  }
+
+  .hours-card{
+    padding:35px 25px;
+  }
+}
