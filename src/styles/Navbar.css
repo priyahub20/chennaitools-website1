@@ -117,7 +117,7 @@
 @media(max-width:768px){
 
   .navbar-container{
-    height:80px;
+    height:65px;
   }
 
   .nav-links{
@@ -125,11 +125,11 @@
   }
 
   .logo img{
-    height:55px;
+    height:42px;
   }
 
   .logo-text h2{
-    font-size:16px;
+    font-size:1rem;
   }
 
   .logo-text span{
