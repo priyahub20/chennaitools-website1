@@ -128,14 +128,16 @@ function About() {
     </p>
 
     <video
-      controls
-      width="100%"
-      preload="metadata"
-      className="about-machine-video"
-    >
-      <source src="/chennaitools-website1/videos/machine-demo.mp4"
-  type="video/mp4" />
-    </video>
+  controls
+  width="100%"
+  preload="metadata"
+  className="about-machine-video"
+>
+  <source
+    src="/chennaitools-website1/videos/machine-demo.mp4"
+    type="video/mp4"
+  />
+</video>
 </div>
 </section>
 
