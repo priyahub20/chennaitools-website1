@@ -1,24 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap');
+
 *{
   margin:0;
   padding:0;
-  font-family: "Poppins", sans-serif;
   box-sizing:border-box;
 }
 
+html{
+  scroll-behavior:smooth;
+}
+
 body{
-  font-family: 'Inter', sans-serif;
+  font-family:'Inter',sans-serif;
   color:#222;
-  background:#fdffff;
-   overflow-x:hidden;
+  background:#fff;
+  overflow-x:hidden;
+  line-height:1.6;
 }
 
 h1,h2,h3,h4,h5,h6{
-  font-family: "Poppins", sans-serif;
+  font-family:'Poppins',sans-serif;
 }
 
 a{
   text-decoration:none;
+}
+
+ul{
+  list-style:none;
 }
 
 img{
@@ -26,20 +35,57 @@ img{
   display:block;
 }
 
+button{
+  border:none;
+  cursor:pointer;
+  font-family:inherit;
+}
+
 .container{
-  width:100%;
+  width:92%;
   max-width:1200px;
   margin:0 auto;
-  padding:0 20px;
 }
 
 section{
-  padding:80px 0;
+  padding:70px 0;
 }
+
+/* Tablet */
+
+@media(max-width:992px){
+
+  section{
+    padding:60px 0;
+  }
+
+  .container{
+    width:94%;
+  }
+}
+
+/* Mobile */
 
 @media(max-width:768px){
 
+  section{
+    padding:50px 0;
+  }
+
   .container{
-    padding:0 15px;
+    width:95%;
+  }
+}
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+  section{
+    padding:40px 0;
+  }
+
+  .container{
+    width:94%;
   }
 }

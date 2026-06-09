@@ -10,43 +10,52 @@ function About() {
     <>
       <Navbar />
       <section className="about-company">
-        <div className="container about-company-grid">
+  <div className="container about-company-grid">
 
-          <div className="about-left">
-            <img src={logo} alt="Chennai Tools Logo" className="about-logo" />
+    <div className="about-left">
 
-            <h2>Trusted Across India</h2>
+      <h2>
+        Trusted Paper Cup Machine Manufacturer Across India
+      </h2>
 
-            <p>
-              Chennai Tools is a trusted manufacturer and supplier
-              of Paper Cup Machines and Spare Parts based in Chennai.
-            </p>
+      <p>
+        Chennai Tools is a trusted manufacturer and supplier of
+        Paper Cup Machines and Spare Parts based in Chennai.
+      </p>
 
-            <p>
-              Since 2007, we have been serving customers across India
-              with reliable machinery, genuine spare parts and
-              dedicated technical support.
-            </p>
+      <p>
+        For more than 18 years, we have been helping businesses
+        improve productivity with reliable machinery, genuine
+        spare parts and dedicated technical support.
+      </p>
 
-            <p>
-              With our own spare parts supply unit, we ensure quick
-              availability of components that help reduce machine
-              downtime and maintain continuous production.
-            </p>
+      <div className="about-highlights">
 
-            <p>
-              Our team can communicate with customers in multiple
-              languages, making it easier to support businesses
-              across different regions of India.
-            </p>
-          </div>
-
-          <div className="about-right">
-            <img src={ct27} alt="CT27 Machine" />
-          </div>
-
+        <div className="highlight-box">
+          <h3>18+</h3>
+          <span>Years Experience</span>
         </div>
-      </section>
+
+        <div className="highlight-box">
+          <h3>100+</h3>
+          <span>Customers Served</span>
+        </div>
+
+        <div className="highlight-box">
+          <h3>24/7</h3>
+          <span>Support</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div className="about-right">
+      <img src={ct27} alt="Paper Cup Machine" />
+    </div>
+
+  </div>
+</section>
 
       <section className="why-us">
         <div className="container">

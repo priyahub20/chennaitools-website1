@@ -1,5 +1,5 @@
 .stats{
-  padding:100px 0;
+  padding:70px 0;
   background:#0F4C81;
   color:#fff;
 }
@@ -7,18 +7,78 @@
 .stats-grid{
   display:grid;
   grid-template-columns:repeat(4,1fr);
+  gap:25px;
+}
+
+.stats-grid div{
   text-align:center;
-  gap:30px;
+  background:rgba(255,255,255,0.08);
+  padding:30px 20px;
+  border-radius:18px;
+  backdrop-filter:blur(10px);
 }
 
 .stats-grid h2{
-  font-size:3rem;
+  font-size:2.6rem;
+  font-weight:800;
   margin-bottom:10px;
+  color:#fff;
 }
 
-@media(max-width:768px){
+.stats-grid p{
+  font-size:1rem;
+  color:#dbe4f0;
+  line-height:1.6;
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+  .stats{
+    padding:60px 0;
+  }
 
   .stats-grid{
     grid-template-columns:repeat(2,1fr);
+  }
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+  .stats{
+    padding:50px 0;
+  }
+
+  .stats-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+  }
+
+  .stats-grid div{
+    padding:20px 15px;
+  }
+
+  .stats-grid h2{
+    font-size:2rem;
+  }
+
+  .stats-grid p{
+    font-size:.9rem;
+  }
+}
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+  .stats-grid h2{
+    font-size:1.7rem;
+  }
+
+  .stats-grid p{
+    font-size:.85rem;
   }
 }

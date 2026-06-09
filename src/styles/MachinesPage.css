@@ -3,89 +3,93 @@
   background:#fff;
   overflow:hidden;
 }
+
 .machines-banner img{
   width:100%;
-  max-height:400px;
+  max-height:350px;
   object-fit:cover;
 }
 
 .machines-page{
-  padding:80px 0;
+  padding:70px 0;
   background:#f8fafc;
 }
 
 .machines-page-grid{
   display:grid;
   grid-template-columns:repeat(2,1fr);
-  gap:35px;
+  gap:30px;
 }
 
 .machine-page-card{
   background:#fff;
   border-radius:18px;
   overflow:hidden;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
-  transition:0.3s ease;
+  box-shadow:0 8px 25px rgba(0,0,0,.08);
+  transition:.3s;
 }
 
 .machine-page-card:hover{
-  transform:translateY(-8px);
-  box-shadow:0 15px 35px rgba(0,0,0,0.12);
+  transform:translateY(-6px);
+  box-shadow:0 12px 30px rgba(0,0,0,.12);
 }
 
 .machine-page-card img{
-   height:180px;
-    object-fit:contain;
-    padding:15px;
-    background:#fff;
+  width:100%;
+  height:220px;
+  object-fit:contain;
+  padding:15px;
+  background:#fff;
 }
 
 .machine-page-content{
-  padding:28px;
+  padding:24px;
 }
 
 .machine-page-content h3{
-  font-size:1.3rem;
+  font-size:1.2rem;
   font-weight:700;
   color:#111827;
-  margin-bottom:15px;
+  margin-bottom:12px;
 }
 
 .machine-badges{
   display:flex;
   flex-wrap:wrap;
-  gap:10px;
-  margin-bottom:18px;
+  gap:8px;
+  margin-bottom:15px;
 }
 
 .machine-badges span{
   background:#eef5ff;
   color:#0F4C81;
-  padding:7px 14px;
-  border-radius:25px;
-  font-size:13px;
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:12px;
   font-weight:600;
 }
 
 .machine-page-content p{
   color:#6b7280;
-  line-height:1.8;
-  margin-bottom:25px;
+  line-height:1.7;
+  margin-bottom:20px;
 }
 
 .machine-details-btn{
   display:inline-block;
   background:#F7931E;
   color:#fff;
-  padding:12px 24px;
+  padding:11px 22px;
   border-radius:8px;
   font-weight:600;
-  transition:0.3s;
+  transition:.3s;
 }
 
 .machine-details-btn:hover{
   transform:translateY(-2px);
 }
+
+/* TABLET */
 
 @media(max-width:992px){
 
@@ -93,47 +97,58 @@
     grid-template-columns:1fr;
   }
 
-  .machines-header h1{
-    font-size:2.3rem;
-  }
-}
-
-@media(max-width:576px){
-
-  .machines-page{
-    padding:60px 0;
-  }
-
-  .machines-header h1{
-    font-size:1.9rem;
-  }
-
   .machine-page-card img{
     height:240px;
   }
 }
 
+/* MOBILE */
+
 @media(max-width:768px){
 
-  .machines-banner{
-    background-position:center bottom;
-    min-height:300px;
+  .machines-page{
+    padding:50px 0;
+  }
+
+  .machines-banner img{
+    max-height:220px;
+  }
+
+  .machine-page-card img{
+    height:180px;
+  }
+
+  .machine-page-content{
+    padding:20px;
+  }
+
+  .machine-page-content h3{
+    font-size:1.05rem;
+  }
+
+  .machine-page-content p{
+    font-size:.92rem;
+  }
+
+  .machine-details-btn{
+    width:100%;
     text-align:center;
   }
+}
 
-  .machines-banner-content{
-    padding:40px 20px;
+/* SMALL MOBILE */
+
+@media(max-width:480px){
+
+  .machine-page-card img{
+    height:160px;
   }
 
-  .machines-banner h1{
-    font-size:1.8rem;
+  .machine-page-content{
+    padding:18px;
   }
 
-   .machines-banner p{
-    font-size:0.9rem;
-  }
-
-  .banner-features{
-    justify-content:center;
+  .machine-badges span{
+    font-size:11px;
   }
 }

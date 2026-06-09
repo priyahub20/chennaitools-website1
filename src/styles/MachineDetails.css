@@ -1,12 +1,13 @@
 .machine-details{
-  padding:80px 0;
+  padding:70px 0;
+  background:#f8fafc;
 }
 
 .machine-top{
   display:flex;
   gap:50px;
   align-items:center;
-  margin-bottom:80px;
+  margin-bottom:60px;
 }
 
 .machine-image{
@@ -16,6 +17,9 @@
 .machine-image img{
   width:100%;
   border-radius:20px;
+  background:#fff;
+  padding:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
 .machine-info{
@@ -23,91 +27,42 @@
 }
 
 .machine-info h1{
+  color:#081930;
   margin-bottom:15px;
+  font-size:2.4rem;
 }
 
 .variant{
   display:inline-block;
-  background:#f1f1f1;
-  padding:10px 15px;
-  border-radius:8px;
+  background:#eef5ff;
+  color:#0F4C81;
+  padding:10px 16px;
+  border-radius:30px;
   margin-bottom:20px;
+  font-weight:600;
 }
 
 .machine-info p{
-  line-height:1.8;
-  color:#555;
+  line-height:1.9;
+  color:#6b7280;
   margin-bottom:25px;
 }
 
 .enquiry-btn{
   display:inline-block;
-  background:#0F4C81;
-  color:white;
+  background:#F7931E;
+  color:#fff;
   padding:14px 28px;
-  border-radius:8px;
-}
-
-.features-section,
-.specifications-section,
-.support-section{
-  margin-top:70px;
-}
-
-.features-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
-  margin-top:30px;
-}
-
-.feature-card{
-  background:#f8f8f8;
-  padding:20px;
-  border-radius:12px;
-}
-
-table{
-  width:100%;
-  border-collapse:collapse;
-  margin-top:30px;
-}
-
-table td{
-  border:1px solid #ddd;
-  padding:15px;
-}
-
-table td:first-child{
+  border-radius:10px;
   font-weight:600;
-  background:#f7f7f7;
+  transition:.3s;
 }
 
-.support-section ul{
-  margin-top:20px;
+.enquiry-btn:hover{
+  transform:translateY(-2px);
 }
 
-.support-section li{
-  margin-bottom:12px;
-}
-
-@media(max-width:992px){
-
-  .machine-top{
-    flex-direction:column;
-  }
-
-  .features-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-}
-
-@media(max-width:576px){
-
-  .features-grid{
-    grid-template-columns:1fr;
-  }
-}
+/* MACHINE STATS */
 
 .machine-stats{
   display:flex;
@@ -117,11 +72,12 @@ table td:first-child{
 }
 
 .stat-box{
-  background:#f8fafc;
-  padding:20px;
-  border-radius:12px;
-  min-width:220px;
+  background:#fff;
+  padding:18px;
+  border-radius:14px;
+  min-width:200px;
   border-left:4px solid #0F4C81;
+  box-shadow:0 5px 15px rgba(0,0,0,.06);
 }
 
 .stat-box h3{
@@ -130,31 +86,47 @@ table td:first-child{
 }
 
 .stat-box span{
-  color:#666;
+  color:#6b7280;
   font-size:14px;
+}
+
+/* FEATURES */
+
+.features-section,
+.specifications-section{
+  margin-top:60px;
+}
+
+.features-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+  margin-top:25px;
 }
 
 .feature-card{
   background:#fff;
   padding:20px;
-  border-radius:14px;
+  border-radius:16px;
   box-shadow:0 5px 20px rgba(0,0,0,.08);
-  display:flex;
-  gap:12px;
-  align-items:flex-start;
 }
 
-.feature-card span{
-  color:green;
-  font-weight:700;
-  font-size:20px;
+.feature-card h4{
+  margin-bottom:10px;
+  color:#081930;
 }
+
+.feature-card p{
+  color:#6b7280;
+}
+
+/* TABLE */
 
 .specifications-section table{
   width:100%;
   border-collapse:collapse;
-  background:white;
-  border-radius:15px;
+  background:#fff;
+  border-radius:16px;
   overflow:hidden;
   box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
@@ -168,18 +140,120 @@ table td:first-child{
   background:#f8fafc;
 }
 
+.specifications-section td:first-child{
+  font-weight:600;
+  color:#081930;
+}
+
+/* SUPPORT */
+
 .support-section{
-  background:#111827;
-  color:white;
-  padding:50px;
+  background:#081930;
+  color:#fff;
+  padding:40px;
   border-radius:20px;
   margin-top:60px;
 }
 
+.support-section h2{
+  margin-bottom:20px;
+}
+
 .support-section ul{
-  margin-top:20px;
+  margin-top:15px;
 }
 
 .support-section li{
   margin-bottom:12px;
+  color:#dbe4f0;
+}
+
+/* TABLET */
+
+@media(max-width:992px){
+
+  .machine-top{
+    flex-direction:column;
+    gap:30px;
+  }
+
+  .machine-info{
+    text-align:center;
+  }
+
+  .machine-stats{
+    justify-content:center;
+  }
+
+  .features-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .machine-info h1{
+    font-size:2rem;
+  }
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .machine-details{
+    padding:50px 0;
+  }
+
+  .machine-info h1{
+    font-size:1.8rem;
+  }
+
+  .machine-image img{
+    padding:12px;
+  }
+
+  .machine-stats{
+    flex-direction:column;
+  }
+
+  .stat-box{
+    width:100%;
+    min-width:auto;
+  }
+
+  .features-grid{
+    grid-template-columns:1fr;
+  }
+
+  .support-section{
+    padding:25px;
+  }
+
+  .specifications-section{
+    overflow-x:auto;
+  }
+
+  .specifications-section table{
+    min-width:500px;
+  }
+
+  .enquiry-btn{
+    width:100%;
+    text-align:center;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media(max-width:480px){
+
+  .machine-info h1{
+    font-size:1.5rem;
+  }
+
+  .variant{
+    font-size:13px;
+  }
+
+  .support-section{
+    padding:20px;
+  }
 }

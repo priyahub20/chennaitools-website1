@@ -1,22 +1,23 @@
 .featured-machines{
-  padding:100px 0;
+  padding:70px 0;
   background:#f8fafc;
 }
 
 .section-title{
   text-align:center;
-  margin-bottom:60px;
+  margin-bottom:50px;
 }
 
 .section-title h2{
-  font-size:2.5rem;
+  font-size:2.4rem;
   margin-bottom:15px;
-  color:#111827 !important;
+  color:#081930;
+  font-weight:800;
 }
 
 .section-title p{
-  color:#111827 !important;
-  font-size:1.4rem;
+  color:#6b7280;
+  font-size:1.05rem;
   max-width:700px;
   margin:auto;
   line-height:1.8;
@@ -25,65 +26,128 @@
 .machines-grid{
   display:grid;
   grid-template-columns:repeat(4,1fr);
-  gap:30px;
+  gap:25px;
 }
 
 .machine-card{
-  background:#90c5f0;
-  border-radius:16px;
+  background:#fff;
+  border-radius:18px;
   overflow:hidden;
-  box-shadow:0 5px 20px rgba(0,0,0,0.08);
-  transition:0.3s;
+  box-shadow:0 8px 25px rgba(0,0,0,.08);
+  transition:.3s;
 }
 
 .machine-card:hover{
-  transform:translateY(-8px);
+  transform:translateY(-6px);
+  box-shadow:0 15px 35px rgba(0,0,0,.12);
 }
 
 .machine-card img{
   width:100%;
-  height:280px;
-  object-fit:cover;
+  height:220px;
+  object-fit:contain;
+  padding:15px;
+  background:#fff;
 }
 
 .machine-content{
-  padding:25px;
+  padding:22px;
 }
 
 .machine-content h3{
-  font-size:1.1rem;
-  margin-bottom:10px;
-  min-height:60px;
+  font-size:1.05rem;
+  font-weight:700;
+  color:#081930;
+  margin-bottom:12px;
+  min-height:55px;
 }
 
 .machine-content p{
-  color:#131313;
-  margin-bottom:20px;
+  color:#6b7280;
+  line-height:1.7;
+  margin-bottom:18px;
+  font-size:.95rem;
 }
 
 .machine-btn{
   display:inline-block;
-  background:#0F4C81;
+  background:#F7931E;
   color:#fff;
-  padding:12px 24px;
+  padding:11px 20px;
   border-radius:8px;
   font-weight:600;
+  transition:.3s;
 }
 
+.machine-btn:hover{
+  transform:translateY(-2px);
+}
+
+/* Tablet */
+
 @media(max-width:992px){
+
+  .featured-machines{
+    padding:60px 0;
+  }
 
   .machines-grid{
     grid-template-columns:repeat(2,1fr);
   }
-}
-
-@media(max-width:576px){
-
-  .machines-grid{
-    grid-template-columns:1fr;
-  }
 
   .section-title h2{
     font-size:2rem;
+  }
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+  .featured-machines{
+    padding:50px 0;
+  }
+
+  .machines-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  .section-title{
+    margin-bottom:35px;
+  }
+
+  .section-title h2{
+    font-size:1.8rem;
+  }
+
+  .section-title p{
+    font-size:.95rem;
+  }
+
+  .machine-card img{
+    height:180px;
+  }
+
+  .machine-content{
+    padding:18px;
+  }
+
+  .machine-btn{
+    width:100%;
+    text-align:center;
+  }
+}
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+  .machine-card img{
+    height:160px;
+  }
+
+  .machine-content h3{
+    font-size:1rem;
   }
 }
