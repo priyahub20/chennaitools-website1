@@ -133,7 +133,8 @@ function About() {
       preload="metadata"
       className="about-machine-video"
     >
-      <source src="/videos/machine-demo.mp4" type="video/mp4" />
+      <source src="/chennaitools-website1/videos/machine-demo.mp4"
+  type="video/mp4" />
     </video>
 </div>
 </section>

@@ -1,5 +1,5 @@
 import ct06 from "../assets/ct06.jpeg";
-import ct23 from "../assets/ct23.png";
+import ct23 from "../assets/machine3.jpeg";
 import ct27 from "../assets/ct27.png";
 import ct27Advanced from "../assets/ct27-advanced.png";
 
