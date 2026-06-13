@@ -45,6 +45,7 @@ button{
   width:92%;
   max-width:1200px;
   margin:0 auto;
+  padding: 0 20px;
 }
 
 section{
@@ -68,12 +69,26 @@ section{
 
 @media(max-width:768px){
 
-  section{
-    padding:50px 0;
+  h1 {
+    font-size: 2rem !important;
+    line-height: 1.2;
   }
 
-  .container{
-    width:95%;
+  h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-content {
+    text-align: center;
   }
 }
 
