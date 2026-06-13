@@ -180,3 +180,89 @@
 .about-video p{
   margin:0 auto 30px;
 }
+
+@media(max-width:768px){
+
+  .about-company-grid{
+    grid-template-columns:1fr;
+    gap:40px;
+    text-align:center;
+  }
+
+  .about-left h2{
+    font-size:2rem;
+  }
+
+  .about-right img{
+    max-width:280px;
+  }
+
+  .about-highlights{
+    justify-content:center;
+  }
+
+  .highlight-box{
+    min-width:130px;
+    flex:1;
+  }
+
+  .mission-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  .mission-card{
+    padding:30px;
+    text-align:center;
+  }
+
+  .mission-icon{
+    margin:0 auto 20px;
+  }
+
+  .why-card{
+    padding:25px;
+  }
+
+  .about-company{
+    padding:70px 0;
+  }
+
+  .mission-section{
+    padding:70px 0;
+  }
+
+  .about-video{
+    padding:50px 20px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media(max-width:480px){
+
+  .about-left h2{
+    font-size:1.8rem;
+  }
+
+  .about-left p{
+    font-size:0.95rem;
+    line-height:1.8;
+  }
+
+  .highlight-box{
+    width:100%;
+  }
+
+  .highlight-box h3{
+    font-size:1.8rem;
+  }
+
+  .mission-card{
+    padding:25px;
+  }
+
+  .mission-card p{
+    font-size:0.95rem;
+  }
+}
