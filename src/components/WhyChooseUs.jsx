@@ -6,7 +6,7 @@ function WhyChooseUs() {
       <div className="container">
 
         <div className="section-title">
-          <h2>Why Choose Chennai Tools ?</h2>
+          <h2>Why Choose Chennai Tools?</h2>
         </div>
 
         <div className="choose-grid">

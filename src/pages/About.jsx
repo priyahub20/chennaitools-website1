@@ -37,7 +37,7 @@ function About() {
         </div>
 
         <div className="highlight-box">
-          <h3>100+</h3>
+          <h3>500+</h3>
           <span>Customers Served</span>
         </div>
 
