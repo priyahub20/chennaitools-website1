@@ -171,12 +171,12 @@
 @media(max-width:480px){
 
   .navbar-container{
-    height:65px;
+    height:60px;
     padding:0 8px;
   }
 
   .logo img{
-    height:34px;
+    height:30px;
   }
 
   .logo-text h2{
