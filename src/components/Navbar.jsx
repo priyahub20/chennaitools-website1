@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FaWhatsapp, FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/logo.png";
 import "../styles/Navbar.css";
@@ -21,21 +21,24 @@ function Navbar() {
         </Link>
 
         <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
-          <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
-          <Link to="/machines" onClick={() => setMenuOpen(false)}>Machines</Link>
-          <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
-          <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
-        </nav>
 
-        <a
-          href="https://wa.me/917604876048"
-          target="_blank"
-          rel="noreferrer"
-          className="quote-btn"
-        >
-          <FaWhatsapp />
-          <span>Open App</span>
-        </a>
+        <NavLink to="/" onClick={() => setMenuOpen(false)}>
+          Home
+        </NavLink>
+
+       <NavLink to="/machines" onClick={() => setMenuOpen(false)}>
+         Machines
+      </NavLink>
+  
+      <NavLink to="/about" onClick={() => setMenuOpen(false)}>
+        About
+      </NavLink>
+
+      <NavLink to="/contact" onClick={() => setMenuOpen(false)}>
+        Contact
+      </NavLink>
+      </nav>
+
 
         <button
           className="menu-btn"

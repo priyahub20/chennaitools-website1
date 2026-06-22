@@ -266,3 +266,36 @@
     font-size:0.95rem;
   }
 }
+
+.about-right img{
+  transition:0.5s ease;
+}
+
+.about-right img:hover{
+  transform:scale(1.05);
+}
+
+.highlight-box{
+  transition:0.4s ease;
+}
+
+.highlight-box:hover{
+  transform:translateY(-8px);
+}
+
+.why-card{
+  transition:0.4s ease;
+}
+
+.why-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+
+.mission-card{
+  transition:0.4s ease;
+}
+
+.mission-card:hover{
+  transform:translateY(-10px);
+}

@@ -1,29 +1,53 @@
 import { Link } from "react-router-dom";
-import machineImg from "../assets/ct27-advanced.png";
 import "../styles/Hero.css";
+import { motion } from "framer-motion";
+import machineImg from "../assets/ct27-advanced.png";
 
 function Hero() {
   return (
     <section className="hero">
 
-      <div className="hero-content">
+      <motion.div
+        className="hero-content"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
 
-        <span className="hero-tag">
+        <motion.span
+          className="hero-tag"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
           Serving Manufacturers Across India Since 2007
-        </span>
+        </motion.span>
 
-        <h1>
+        <motion.h1
+          initial={{ opacity: 0, x: -40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+        >
           Powering Paper Cup Manufacturing with Reliable Machines &
           Genuine Spare Parts
-        </h1>
+        </motion.h1>
 
-        <p>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4, duration: 0.8 }}
+        >
           Chennai Tools delivers high-performance paper cup machines,
           genuine spare parts and technical support trusted by
           manufacturers across India.
-        </p>
+        </motion.p>
 
-        <div className="hero-buttons">
+        <motion.div
+          className="hero-buttons"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.6 }}
+        >
           <Link to="/machines" className="primary-btn">
             Explore Machines
           </Link>
@@ -31,10 +55,10 @@ function Hero() {
           <Link to="/about" className="secondary-btn">
             About Us
           </Link>
-        </div>
+        </motion.div>
 
-      </div>
-      
+      </motion.div>
+
     </section>
   );
 }

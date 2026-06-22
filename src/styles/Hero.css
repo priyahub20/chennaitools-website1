@@ -1,6 +1,6 @@
 .hero{
   position:relative;
-  min-height: 60vh;
+  min-height:60vh;
 
   background:
   linear-gradient(
@@ -11,16 +11,21 @@
 
   background-size:cover;
   background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:80px 20px;
 }
 
 .hero-content{
-  position:relative;
-  z-index:2;
-  max-width:650px;
-  color:#fff;
-
-  margin:0 auto;
+  max-width:700px;
   text-align:center;
+  color:#fff;
+  z-index:2;
 }
 
 .hero-tag{
@@ -39,7 +44,6 @@
   font-weight:800;
   line-height:1.15;
   margin-bottom:20px;
-  text-align: center;
 }
 
 .hero-content p{
@@ -48,16 +52,15 @@
   color:#d1d5db;
   margin-bottom:35px;
   max-width:600px;
-  text-align:center;
   margin-left:auto;
   margin-right:auto;
 }
 
 .hero-buttons{
   display:flex;
+  justify-content:center;
   gap:15px;
   flex-wrap:wrap;
-  justify-content:center;
 }
 
 .primary-btn{
@@ -93,72 +96,53 @@
 @media(max-width:992px){
 
   .hero{
-    min-height:75vh;
-    text-align:center;
-
-    background-position:center bottom;
-    background-size:65%;
-  }
-
-  .hero-content{
-    max-width:100%;
-  }
-
-  .hero-buttons{
-    justify-content:center;
+    min-height:55vh;
+    background-attachment:scroll;
   }
 
   .hero-content h1{
-    font-size:2.7rem;
+    font-size:2.6rem;
   }
 }
 
 /* MOBILE */
 
-  @media(max-width:768px){
+@media(max-width:768px){
 
-   .hero{
-    min-height:55vh !important;
-    padding:20px 20px !important;
-  
-
-    background-position:center bottom;
-    background-size:75%;
-    text-align:center;
+  .hero{
+    min-height:50vh;
+    padding:50px 20px;
+    background-attachment:scroll;
   }
 
   .hero-content{
     max-width:100%;
-    text-align:center;
-    margin:0 auto;
+  }
+
+  .hero-tag{
+    font-size:13px;
+    padding:8px 16px;
   }
 
   .hero-content h1{
     font-size:2rem;
-    line-height:1.15;
-    text-align: center;
+    line-height:1.2;
   }
 
   .hero-content p{
-    text-align:center;
-    margin:0 auto 25px;
+    font-size:0.95rem;
+    line-height:1.7;
   }
 
   .hero-buttons{
-    justify-content:center;
+    flex-direction:column;
     align-items:center;
   }
 
   .primary-btn,
   .secondary-btn{
     width:220px;
-  }
-
-  .hero{
-    min-height:85vh;
-
-    background-position:center;
-    background-size:cover;
+    text-align:center;
   }
 }
 
@@ -167,17 +151,12 @@
 @media(max-width:480px){
 
   .hero{
-    padding:40px 0 180px;
-    background-size:75%;
-  }
-
-  .hero-content{
-    max-width:300px;
+    min-height:45vh;
+    padding:40px 15px;
   }
 
   .hero-content h1{
     font-size:1.8rem;
-    line-height:1.2;
   }
 
   .hero-content p{

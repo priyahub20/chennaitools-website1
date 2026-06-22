@@ -14,7 +14,7 @@
 }
 
 .contact-card{
-  background:#fff;
+  background:#dbd8d8;
   border-radius:20px;
   padding:30px;
   box-shadow:0 10px 25px rgba(0,0,0,.08);
@@ -52,7 +52,7 @@
 }
 
 .contact-card a:hover{
-  color:#F7931E;
+  color:#e2e1e0;
 }
 
 .contact-card p{
@@ -123,7 +123,7 @@
 .hours-card{
   max-width:700px;
   margin:auto;
-  background:#fff;
+  background:#dbd8d8;
   padding:40px;
   border-radius:20px;
   text-align:center;
@@ -141,7 +141,7 @@
 }
 
 .hours-card p{
-  color:#6b7280;
+  color:#535455;
   margin-bottom:8px;
 }
 

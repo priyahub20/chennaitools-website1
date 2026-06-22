@@ -249,3 +249,11 @@
     display:flex;
   }
 }
+
+.nav-links a.active{
+  color:#0F4C81;
+}
+
+.nav-links a.active::after{
+  width:100%;
+}

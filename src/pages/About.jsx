@@ -2,8 +2,10 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../styles/About.css";
 
-import logo from "../assets/logo.png";
 import ct27 from "../assets/ct27.png";
+
+import { motion } from "framer-motion";
+import CountUp from "react-countup";
 
 function About() {
   return (
@@ -12,7 +14,13 @@ function About() {
       <section className="about-company">
   <div className="container about-company-grid">
 
-    <div className="about-left">
+    <motion.div
+    className="about-left"
+    initial={{ opacity: 0, x: -50 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: true }}
+    >
 
       <h2>
         Trusted Paper Cup Machine Manufacturer Across India
@@ -31,28 +39,34 @@ function About() {
 
       <div className="about-highlights">
 
-        <div className="highlight-box">
-          <h3>18+</h3>
-          <span>Years Experience</span>
-        </div>
-
-        <div className="highlight-box">
-          <h3>500+</h3>
-          <span>Customers Served</span>
-        </div>
-
-        <div className="highlight-box">
-          <h3>24/7</h3>
-          <span>Support</span>
-        </div>
-
+      <div className="highlight-box">
+      <h3>18+</h3>
+      <span>Years Experience</span>
       </div>
 
-    </div>
+      <div className="highlight-box">
+      <h3>500+</h3>
+      <span>Customers Served</span>
+      </div>
 
-    <div className="about-right">
-      <img src={ct27} alt="Paper Cup Machine" />
-    </div>
+      <div className="highlight-box">
+      <h3>24/7</h3>
+      <span>Support</span>
+      </div>
+
+</div>
+
+    </motion.div>
+
+    <motion.div
+    className="about-right"
+    initial={{ opacity: 0, x: 50 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: true }}
+    >
+   <img src={ct27} alt="Paper Cup Machine" />
+   </motion.div>
 
   </div>
 </section>

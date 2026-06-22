@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../styles/Contact.css";
+import { motion } from "framer-motion";
 import {
   FaPhoneAlt,
   FaEnvelope,
@@ -19,7 +20,17 @@ function Contact() {
 
           <div className="contact-grid">
 
-  <div className="contact-card">
+    <motion.div
+  className="contact-card"
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.5 }}
+  whileHover={{
+    y: -8,
+    scale: 1.02
+  }}
+>
     <div className="contact-icon">
       <FaPhoneAlt />
     </div>
@@ -30,7 +41,7 @@ function Contact() {
     <a href="tel:9884076048">9884076048</a>
 
     <span>Sales & Support Team</span>
-  </div>
+    </motion.div>
 
   <div className="contact-card">
     <div className="contact-icon">
@@ -54,11 +65,11 @@ function Contact() {
     <h3>Instagram</h3>
 
     <a
-      href="https://instagram.com/chennai_tools"
+      href="https://instagram.com/chennaitools_spareparts"
       target="_blank"
       rel="noreferrer"
     >
-      @chennai_tools
+      @chennaitools_spareparts
     </a>
 
     <span>Latest Updates & Machines</span>
@@ -91,7 +102,13 @@ function Contact() {
 </section>
 
       <section className="contact-actions">
-        <div className="container">
+        <motion.div
+  className="container"
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8 }}
+>
 
           <h2>Need Immediate Assistance?</h2>
 
@@ -109,7 +126,7 @@ function Contact() {
 
           </div>
 
-        </div>
+        </motion.div>
       </section>
 
       <section className="map-section">
@@ -134,7 +151,13 @@ function Contact() {
 
   <div className="container">
 
-    <div className="hours-card">
+    <motion.div
+  className="hours-card"
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6 }}
+>
 
       <FaClock className="hours-icon" />
 
@@ -144,7 +167,7 @@ function Contact() {
 
       <p>Sunday : By Appointment</p>
 
-    </div>
+    </motion.div>
 
   </div>
 </section>
