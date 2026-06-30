@@ -36,6 +36,19 @@
   color:#F7931E;
 }
 
+.footer-links a{
+  display:block;
+  color:#d1d5db;
+  text-decoration:none;
+  margin:12px 0;
+  transition:0.3s ease;
+}
+
+.footer-links a:hover{
+  color:#3DABEB;
+  padding-left:8px;
+}
+
 .copyright{
   text-align:center;
   border-top:1px solid rgba(255,255,255,.1);
