@@ -26,7 +26,7 @@ function Machines() {
         ⭐ BEST SELLER
       </span>
 
-      <h1>CT 27 ADVANCED</h1>
+      <h1>TEST 123</h1>
 
       <p>
         High Speed Paper Cup Machine engineered for maximum
