@@ -151,15 +151,16 @@ function About() {
     </p>
 
     <video
-  controls
-  width="100%"
-  preload="metadata"
   className="about-machine-video"
+  controls
+  playsInline
+  preload="metadata"
 >
   <source
-    src="/chennaitools-website1/videos/machine-demo.mp4"
+    src="/videos/machine-demo.mp4"
     type="video/mp4"
   />
+  Your browser does not support the video tag.
 </video>
 </div>
 </section>

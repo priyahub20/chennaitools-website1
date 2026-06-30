@@ -235,6 +235,17 @@
   .about-video{
     padding:50px 20px;
   }
+
+.about-machine-video{
+     width:100%;
+    max-width:900px;
+    aspect-ratio:16/9;
+    display:block;
+    margin:auto;
+    border-radius:18px;
+    background:#000;
+}
+
 }
 
 /* SMALL MOBILE */

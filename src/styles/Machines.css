@@ -137,7 +137,63 @@
     width:100%;
     text-align:center;
   }
+
+  .best-machine-content{
+    display:grid;
+    grid-template-columns:1.2fr 0.8fr;
+    align-items:center;
+    gap:15px;
+  }
+
+  .best-machine-left{
+    text-align:left;
+  }
+
+  .best-machine-left h1{
+    font-size:1.8rem;
+    line-height:1.2;
+  }
+
+  .best-machine-left p{
+    font-size:.9rem;
+    line-height:1.6;
+  }
+
+  .best-machine-right{
+    text-align:right;
+  }
+
+  .best-machine-right img{
+    width:100%;
+    max-width:170px;
+  }
+
+  .feature-row{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+    margin-top:20px;
+  }
+
+  .feature-box{
+    min-width:auto;
+    padding:12px;
+  }
+
+  .feature-box h3{
+    font-size:18px;
+  }
+
+  .feature-box span{
+    font-size:11px;
+  }
+
+  .best-machine-right::before,
+  .best-machine-right::after{
+    display:none;
+  }
 }
+
 
 /* Small Mobile */
 

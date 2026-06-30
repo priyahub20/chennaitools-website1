@@ -62,7 +62,7 @@ function Machines() {
       transition={{ duration: 0.8 }}
     >
       <img
-        src={machines[2]?.image || machines[2].image}
+        src={machines[2].image}
         alt="CT27 Advanced"
       />
     </motion.div>
